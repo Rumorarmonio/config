@@ -18,8 +18,7 @@
     "typescript-eslint": "^8.24.1",
     "vite": "^6.0.11",
     "vite-plugin-inspect": "^10.2.1",
-    "vite-plugin-pug": "^0.4.1",
-    "vite-plugin-pwa": "^0.21.1"
+    "vite-plugin-pug": "^0.4.1"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"

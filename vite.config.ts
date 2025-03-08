@@ -2,8 +2,6 @@ import { defineConfig } from 'vite'
 import pugPlugin from 'vite-plugin-pug'
 import fs from 'fs'
 import Inspect from 'vite-plugin-inspect'
-import { VitePWA } from 'vite-plugin-pwa'
-import { PWAConfig } from './PWAConfig'
 
 // const PAGES = findFilesWithExtension('.html')
 
@@ -22,7 +20,6 @@ export default defineConfig({
     pugPlugin(options, locals),
     Inspect(),
     removeCrossOrigin(),
-    VitePWA(PWAConfig),
   ],
   server: {
     port: 1337,
