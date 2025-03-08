@@ -1,0 +1,44 @@
+.hero {
+  &__decorations {
+    margin-top: 60px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: $violet;
+      height: 298px;
+      width: 100%;
+      bottom: 0;
+    }
+  }
+
+  &__image {
+    pointer-events: none;
+    margin-inline: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__logo {
+    fill: $text-black;
+  }
+
+  &__top {
+    display: flex;
+    gap: 80px;
+    text-transform: uppercase;
+    position: relative;
+    margin-block: 36px 60px;
+  }
+
+  &__rhombus {
+    width: 10px;
+    height: 10px;
+    background: $text-black;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -40px;
+  }
+}

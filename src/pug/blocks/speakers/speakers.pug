@@ -1,0 +1,14 @@
+section.speakers
+  .container
+    ul.speakers__list
+      each speaker, index in speakers
+        li.speakers__item
+          a(href='#' target='_blank')
+            img.speakers__image(alt=`${index + 1}.jpg` src=`images/speakers/${index + 1}.jpg`)
+            .speakers__info
+              h3.speakers__name!= speaker.name
+              p.speakers__pronounce!= speaker.pronounce
+              p.speakers__post!= speaker.post
+              if speaker.leadership
+                .speakers__leadership Leadership collective
+    button.button.button_blank load more

@@ -1,0 +1,42 @@
+.tickets {
+  background: $violet;
+  color: $beige;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+    gap: 40px;
+
+    &-top {
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      color: $beige;
+      gap: 8px;
+    }
+  }
+
+  &__left {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+
+    h2 {
+      font-size: 48px;
+    }
+    
+    p {
+      font-size: 24px;
+    }
+  }
+
+  .button {
+    height: auto;
+    font-size: 48px;
+    border-radius: 300px;
+    width: 50%;
+    text-transform: unset;
+  }
+}

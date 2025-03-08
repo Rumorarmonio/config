@@ -1,0 +1,74 @@
+@mixin hover {
+  @include has-hover {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin hover-active {
+  &:active {
+    @content;
+  }
+
+  @include has-hover {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin has-hover {
+  @media(hover) {
+    @content;
+  }
+}
+
+@mixin no-hover {
+  @media(hover: none) {
+    @content;
+  }
+}
+
+@mixin scrollbar($width: 6px, $radius: 10px) {
+  &::-webkit-scrollbar {
+    width: $width;
+    transition: var(--transition);
+
+    &-track {
+      background: $grey-DE;
+    }
+
+    &-thumb {
+      background: var(--color-primary);
+      border-radius: $radius;
+
+      &:active {
+        background: var(--color-accent);
+      }
+    }
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin size($variable: --size) {
+  width: var($variable);
+  height: var($variable);
+}
+
+@mixin svg($color: $orange) {
+  fill: $color;
+  stroke: $color;
+}
+
+@function fluid($min-value, $max-value, $min-width: $bp719, $max-width: $bp1499) {
+  $slope: calc(($max-value - $min-value) / ($max-width - $min-width));
+  $y-axis-intersection: -1 * $min-width * $slope + $min-value;
+
+  @return clamp(#{$min-value}, #{$y-axis-intersection} + #{$slope} * 100vw, #{$max-value});
+}

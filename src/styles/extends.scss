@@ -1,0 +1,105 @@
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%link {
+  transition: var(--transition);
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-offset: 4px;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 2px;
+
+  &.link_icon {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    width: fit-content;
+  }
+
+  &.link_plain {
+    text-decoration: none;
+  }
+
+  &.link_solid {
+    text-decoration-style: solid;
+  }
+
+  svg {
+    transition-duration: var(--transition);
+    transition-property: fill, stroke;
+  }
+
+  @include hover-active {
+    color: $orange;
+    text-decoration-color: $orange;
+
+    svg {
+      @include svg;
+    }
+  }
+}
+
+%button {
+  @extend %flex-center;
+
+  background: $text-black;
+  padding-inline: 32px;
+  border-radius: 60px;
+  color: $beige;
+  cursor: pointer;
+  transition-property: background, color, visibility, opacity, border;
+  transition-duration: var(--transition);
+  gap: 6px;
+  height: 58px;
+  text-transform: uppercase;
+  width: fit-content;
+
+  @include hover-active {
+    background: $orange;
+  }
+
+  .page_green & {
+    background: $beige;
+    color: $text-black;
+
+    @include hover-active {
+      background: $orange;
+      color: $beige;
+    }
+  }
+}
+
+%button-blue {
+  background: $blue;
+}
+
+%button-blank {
+  color: $text-black;
+  border: 2px dashed $text-black;
+  background: transparent;
+
+  @include hover-active {
+    border: 2px solid $orange;
+    color: $beige;
+  }
+
+  .page_green & {
+    background: transparent;
+    color: $beige;
+    border-color: $beige;
+
+    @include hover-active {
+      background: $orange;
+      border: 2px solid $orange;
+      color: $beige;
+    }
+  }
+}
+
+%button-grey-text {
+  color: $blue-light;
+}

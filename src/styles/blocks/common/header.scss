@@ -1,0 +1,41 @@
+.header {
+  text-transform: uppercase;
+  padding-block: 24px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    a {
+      display: block;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__logo {
+    transition: var(--transition);
+    fill: $text-black;
+
+    @include hover-active {
+      fill: $orange;
+    }
+
+    .page_green & {
+      fill: $beige;
+
+      @include hover-active {
+        fill: $orange;
+      }
+    }
+  }
+}

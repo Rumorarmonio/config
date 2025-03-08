@@ -1,0 +1,22 @@
+.speakers {
+  &-info {
+    margin-top: 80px;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+      margin-top: 28px;
+      max-width: 550px;
+    }
+
+    &__title {
+      font-size: 24px;
+      font-weight: 300;
+    }
+
+    &__paragraph {
+      max-width: 450px;
+    }
+  }
+}

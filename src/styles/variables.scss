@@ -1,0 +1,73 @@
+$breakpoints: (
+  bp1919: 1919px,
+  bp1500: 1500px,
+  bp1499: 1499px,
+  bp1470: 1470px,
+  bp1200: 1200px,
+  bp1199: 1199px,
+  bp960: 960px,
+  bp959: 959px,
+  bp720: 720px,
+  bp719: 719px,
+  bp480: 480px
+);
+
+$bp1919: 1919px;
+$bp1500: 1500px;
+$bp1499: 1499px;
+$bp1470: 1470px;
+
+$bp1200: 1200px;
+$bp1199: 1199px;
+
+$bp960: 960px;
+$bp959: 959px;
+
+$bp720: 720px;
+$bp719: 719px;
+
+$bp480: 480px;
+
+$transition: .3s;
+
+$white: #fff;
+$black: #000;
+$text-black: #252525;
+$blue: #0000fd;
+$blue-light: #D5E1E1;
+$violet: #1b1463;
+$beige: #FFF5DA;
+$green: #12a620;
+$green-light: #12A720;
+$green-dark: #0C5238;
+$yellow: #fdfd00;
+$orange: #fd6c38;
+$pink: #F79CFF;
+$pink-dark: #ED58DF;
+
+$shadow: 0 0 20px 0 rgba($black, .1);
+
+:root {
+  --transition: .3s;
+
+  --font-40: 40px;
+  --font-36: 36px;
+
+  --padding: 30px;
+
+  --content: 1260px;
+
+  --container: calc(var(--content) + (var(--padding) * 2));
+
+  @include max-1199 {
+
+  }
+
+  @include max-959 {
+
+  }
+
+  @include max-719 {
+    --padding: 20px;
+  }
+}

@@ -1,0 +1,70 @@
+@keyframes moveRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(-1turn);
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(120%);
+  }
+}
+
+@keyframes moveTop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-150%);
+  }
+}
+
+@keyframes animateLogo {
+  0% {
+    fill: $blue-light;
+  }
+  30% {
+    fill: $orange;
+  }
+  60% {
+    fill: $yellow;
+  }
+  90% {
+    fill: $beige;
+  }
+  100% {
+    fill: $blue-light;
+  }
+}

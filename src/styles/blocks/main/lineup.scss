@@ -1,0 +1,26 @@
+.lineup {
+  background: $pink;
+
+  &__content {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    max-width: 400px;
+
+    p {
+      font-size: 24px
+    }
+  }
+
+  &__right {
+    font-size: 94px;
+    line-height: 1.2;
+  }
+}

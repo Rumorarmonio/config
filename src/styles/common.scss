@@ -1,0 +1,71 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  letter-spacing: .01em;
+  border: none;
+  scroll-behavior: smooth;
+  outline: none;
+  //outline: 1px solid red;
+}
+
+#app, #__nuxt {
+  overflow: hidden;
+}
+
+.page {
+  color: $text-black;
+  background-color: $blue-light;
+  font-family: Inter, sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  font-size: 16px;
+  overflow-x: hidden;
+
+  &_green {
+    background-color: $green-dark;
+    color: $beige;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+img, .button {
+  user-select: none;
+}
+
+p, ul, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+u {
+  text-underline-offset: 4px;
+
+  a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
+
+button {
+  background: none;
+}
+
+.container {
+  max-width: var(--container);
+  padding-inline: var(--padding);
+  margin-inline: auto;
+  width: 100%;
+}

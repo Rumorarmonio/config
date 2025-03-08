@@ -1,0 +1,30 @@
+footer.footer
+  .container
+    .footer__content
+      .footer__top
+        .footer__left
+          a(href='https://www.figma.com/' target='_blank').link.link_icon
+            +icon('figma')(width='120' height='44')
+        .footer__right
+          each column in footerColumns
+            .footer__right-column
+              p.footer__right-label!= column.label
+              ul.footer__right-list
+                each item in column.list
+                  li
+                    a(href=item.link target='_blank').link.link_icon
+                      span!= item.name
+                      if !item.noArrow
+                        +icon('arrow-link')(width='8' height='8')
+
+      +icon('logo', 'logo-sprite')(height='240', width='1260').footer__logo
+
+      .footer__bottom
+        a.link.link_icon.link_plain(href='#')
+          +icon('planet')(width='13' height='13')
+          span English
+          +icon('arrow-download')(width='9' height='11')
+        .footer__bottom-opacity
+          a.link.link_plain.opacity-60(href='#') Cookie settings
+          span.opacity-60 /
+          span.opacity-60 © Figma 2024

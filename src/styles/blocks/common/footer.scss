@@ -1,0 +1,116 @@
+.footer {
+  color: $blue-light;
+  background: $text-black;
+  padding-block: 80px 32px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+  }
+
+  &__logo {
+    fill: $blue-light;
+    margin-top: 80px;
+    //transition: var(--transition);
+    //animation-duration: 1s;
+
+    @include hover-active {
+      //fill: $orange;
+      //animation: animateLogo 10s linear infinite;
+    }
+
+    //&:not(:hover) {
+    //  animation: none;
+    //  transition: 1s ease;
+    //}
+  }
+
+  &__right {
+    display: flex;
+    gap: 64px;
+
+    &-label {
+      font-size: 14px;
+    }
+
+    &-list {
+      margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  &__columns {
+    margin-top: 54px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .link_icon {
+    svg {
+      @include svg($blue-light);
+    }
+
+    @include hover-active {
+      svg {
+        @include svg;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 24px;
+    font-size: 14px;
+
+    .link_icon {
+      gap: 8px;
+    }
+
+    &-opacity {
+      display: flex;
+      gap: 16px;
+      opacity: .6;
+    }
+  }
+
+  &-upper {
+    background: $blue;
+    margin-top: 100px;
+
+    &_main {
+      margin-top: 0;
+    }
+
+    &_registration {
+      background: $green-light;
+
+      .footer-upper__line {
+        background: $yellow;
+
+        &:first-child {
+          flex: 2;
+        }
+
+        &:last-child {
+          flex: 7;
+        }
+      }
+    }
+
+    .container {
+      display: flex;
+      gap: 60px;
+    }
+
+    &__line {
+      flex: 1;
+      background: $pink-dark;
+      height: 16px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.button {
+  @extend %button;
+
+  &_blue {
+    @extend %button-blue;
+  }
+
+  &_blank {
+    @extend %button-blank;
+  }
+
+  &_grey-text {
+    @extend %button-grey-text;
+  }
+}

@@ -1,0 +1,67 @@
+//max
+@mixin max-1919 {
+  @media (max-width: map-get($breakpoints, 'bp1919')) {
+    @content
+  }
+}
+
+@mixin max-1499 {
+  @media (max-width: map-get($breakpoints, 'bp1499')) {
+    @content
+  }
+}
+
+@mixin max-1470 {
+  @media (max-width: map-get($breakpoints, 'bp1470')) {
+    @content
+  }
+}
+
+@mixin max-1199 {
+  @media (max-width: map-get($breakpoints, 'bp1199')) {
+    @content
+  }
+}
+
+@mixin max-959 {
+  @media (max-width: map-get($breakpoints, 'bp959')) {
+    @content
+  }
+}
+
+@mixin max-719 {
+  @media (max-width: map-get($breakpoints, 'bp719')) {
+    @content
+  }
+}
+
+@mixin max-480 {
+  @media (max-width: map-get($breakpoints, 'bp480')) {
+    @content
+  }
+}
+
+//min
+@mixin min-1500 {
+  @media (min-width: map-get($breakpoints, 'bp1500')) {
+    @content
+  }
+}
+
+@mixin min-1200 {
+  @media (min-width: map-get($breakpoints, 'bp1200')) {
+    @content
+  }
+}
+
+@mixin min-960 {
+  @media (min-width: map-get($breakpoints, 'bp960')) {
+    @content
+  }
+}
+
+@mixin min-720 {
+  @media (min-width: map-get($breakpoints, 'bp720')) {
+    @content
+  }
+}

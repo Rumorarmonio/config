@@ -1,0 +1,15 @@
+section.sponsors.section
+  .container
+    .sponsors__content
+      .section-top.section-top_dark
+        +icon('hourglass')(width='13' height='13')
+        span sponsors
+      .sponsors__text
+        h2 Thank you to our sponsors
+        p We're excited to bring you an incredible Config experience, made possible by the support of our sponsors.
+      ul.sponsors__list
+        each item in [1, 2, 3, 4, 5, 6, 7, 8]
+          li.sponsors__list-item
+            a(href='#')
+              img(alt=`${item}.jpg` src=`images/sponsors/${item}.jpg`)
+      a(href='#').button.button_blank See all sponsors

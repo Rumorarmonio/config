@@ -1,0 +1,27 @@
+.section {
+  padding-block: 80px;
+  font-weight: 300;
+
+  &-top {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: $beige;
+    gap: 8px;
+    line-height: 1;
+    width: fit-content;
+    font-weight: 400;
+
+    svg {
+      fill: $beige;
+    }
+
+    &_dark {
+      color: $text-black;
+
+      svg {
+        fill: $text-black;
+      }
+    }
+  }
+}

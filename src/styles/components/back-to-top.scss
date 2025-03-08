@@ -1,0 +1,27 @@
+.back-to-top {
+  --position: 32px;
+  --size: 46px;
+  @include size;
+
+  background: $text-black;
+  border-radius: 50%;
+  transition: var(--transition);
+  cursor: pointer;
+  box-shadow: 0 0 20px 0 rgba($white, .15);
+
+  position: fixed;
+  z-index: 6;
+  bottom: -50px;
+  right: var(--position);
+
+  &.visible {
+    opacity: 1;
+    bottom: var(--position);
+  }
+
+  @include hover-active {
+    background: $orange;
+    transform: rotate(90deg);
+    box-shadow: 0 0 20px 0 rgba($orange, .15);
+  }
+}

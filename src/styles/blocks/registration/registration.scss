@@ -1,0 +1,75 @@
+.registration {
+  margin-top: 80px;
+
+  &__content {
+    margin-top: 32px;
+    display: flex;
+    gap: 120px;
+    font-weight: 300;
+  }
+
+  &__left {
+    font-size: 24px;
+    flex-shrink: 0;
+  }
+
+  &__description {
+    font-size: 32px;
+  }
+
+  &__card {
+    margin-top: 24px;
+    border: 2px dashed $text-black;
+    border-radius: 8px;
+    transition: var(--transition);
+
+    @include hover-active {
+      box-shadow: $shadow;
+      transform: scale(1.015);
+      border: 2px solid $orange;
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      padding: 32px;
+    }
+
+    &-title {
+      font-size: 48px;
+    }
+
+    &-prices {
+      display: flex;
+      gap: 10px;
+      font-size: 24px;
+      margin-top: 32px;
+    }
+
+    &-price {
+      font-weight: 700;
+
+      span {
+        font-weight: 300;
+      }
+    }
+
+    &-old-price {
+      text-decoration: line-through;
+      font-weight: 400;
+    }
+
+    &-details {
+      margin-top: 12px;
+      font-weight: 400;
+    }
+
+    &-description {
+      font-size: 24px;
+    }
+
+    &-container {
+      margin-top: 64px;
+    }
+  }
+}

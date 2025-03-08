@@ -1,0 +1,9 @@
+mixin icon(icon, href)
+  svg(
+    class = attributes.class,
+    viewBox = attributes.viewBox,
+    width = attributes.width,
+    height = attributes.height,
+    style = attributes.style
+  )
+    use(xlink:href= (href || 'sprite') + '.svg#' + icon)

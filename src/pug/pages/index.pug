@@ -1,0 +1,27 @@
+extends ../layouts/main
+
+block variables
+  -
+    var pages = [
+      {
+        path: 'main',
+        title: 'Main',
+      },
+      {
+        path: 'speakers',
+        title: 'Speakers',
+      },
+      {
+        path: 'registration',
+        title: 'Registration',
+      },
+    ]
+
+block content
+  section.pages
+    .container
+      h1 Pages:
+      ol.pages__list
+        each page in pages
+          li.pages__item
+            a.link(href = `${page.path}.html`)!= page.title
