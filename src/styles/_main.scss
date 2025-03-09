@@ -1,15 +1,16 @@
-@import url('public/fonts/inter.css');
+//@import url('public/fonts/inter.css');
+@import 'fonts';
 
-@import "normalize.css";
+@import 'normalize.css';
 
-@import "_global";
+@import '_global';
 
-@import "common";
-@import "components/title";
+@import 'common';
+@import 'components/title';
 
-@import "media-utilities";
+@import 'media-utilities';
 
-@import "keyframes";
+@import 'keyframes';
 
-@import "components/_main";
-@import "blocks/_main";
+@import 'components/_main';
+@import 'blocks/_main';

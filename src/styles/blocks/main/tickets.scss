@@ -5,6 +5,7 @@
   &__content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 28px;
     gap: 40px;
 
@@ -38,5 +39,6 @@
     border-radius: 300px;
     width: 50%;
     text-transform: unset;
+    min-height: 140px;
   }
 }

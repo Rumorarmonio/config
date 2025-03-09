@@ -1,21 +1,3 @@
-@keyframes animateLogo {
-  0% {
-    fill: $blue-light;
-  }
-  30% {
-    fill: $orange;
-  }
-  60% {
-    fill: $yellow;
-  }
-  90% {
-    fill: $beige;
-  }
-  100% {
-    fill: $blue-light;
-  }
-}
-
 //c
 @keyframes logo-c-rectangle {
   from {

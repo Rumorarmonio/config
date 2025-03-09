@@ -7,11 +7,14 @@
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
   &__logo {
     fill: $blue-light;
     margin-top: 80px;
+    max-width: 100%;
     //transition: var(--transition);
     //animation-duration: 1s;
 
@@ -29,6 +32,11 @@
   &__right {
     display: flex;
     gap: 64px;
+    flex-wrap: wrap;
+
+    @include max-959 {
+      gap: 28px;
+    }
 
     &-label {
       font-size: 14px;

@@ -11,6 +11,7 @@
   "devDependencies": {
     "@eslint/js": "^9.20.0",
     "@types/node": "^22.13.4",
+    "@types/three": "^0.174.0",
     "eslint": "^9.20.1",
     "globals": "^15.14.0",
     "sass": "1.77.6",
@@ -21,6 +22,7 @@
     "vite-plugin-pug": "^0.4.1"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "three": "^0.174.0"
   }
 }

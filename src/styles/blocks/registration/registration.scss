@@ -6,6 +6,11 @@
     display: flex;
     gap: 120px;
     font-weight: 300;
+
+    @include max-1199 {
+      flex-direction: column;
+      gap: 36px;
+    }
   }
 
   &__left {

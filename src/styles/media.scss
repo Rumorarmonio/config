@@ -17,7 +17,12 @@
   }
 }
 
-@mixin max-1199 {
+@mixin max-1439 {
+  @media (max-width: map-get($breakpoints, 'bp1439')) {
+    @content
+  }
+
+}@mixin max-1199 {
   @media (max-width: map-get($breakpoints, 'bp1199')) {
     @content
   }
@@ -44,6 +49,12 @@
 //min
 @mixin min-1500 {
   @media (min-width: map-get($breakpoints, 'bp1500')) {
+    @content
+  }
+}
+
+@mixin min-1440 {
+  @media (min-width: map-get($breakpoints, 'bp1440')) {
     @content
   }
 }

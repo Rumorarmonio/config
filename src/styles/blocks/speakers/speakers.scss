@@ -5,6 +5,10 @@
     display: flex;
     column-gap: 60px;
     flex-wrap: wrap;
+
+    @include max-719 {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -29,10 +33,18 @@
       display: flex;
       gap: 60px;
       padding-block: 32px;
+
+      @include max-1439 {
+        gap: 32px;
+      }
     }
   }
 
   &__image {
+    --size: 150px;
+    width: var(--size);
+    max-height: var(--size);
+
     border-radius: 6px;
     pointer-events: none;
     transition: var(--transition);
@@ -43,6 +55,10 @@
     flex-direction: column;
     gap: 8px;
     width: 370px;
+
+    @include max-719 {
+      width: unset;
+    }
   }
 
   &__name {
