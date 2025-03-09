@@ -14,12 +14,12 @@
   }
 
   &__left {
-    font-size: 24px;
+    font-size: var(--font-24);
     flex-shrink: 0;
   }
 
   &__description {
-    font-size: 32px;
+    font-size: var(--font-32);
   }
 
   &__card {
@@ -41,13 +41,13 @@
     }
 
     &-title {
-      font-size: 48px;
+      font-size: var(--font-48);
     }
 
     &-prices {
       display: flex;
       gap: 10px;
-      font-size: 24px;
+      font-size: var(--font-24);
       margin-top: 32px;
     }
 
@@ -70,7 +70,7 @@
     }
 
     &-description {
-      font-size: 24px;
+      font-size: var(--font-24);
     }
 
     &-container {

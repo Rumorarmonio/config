@@ -15,9 +15,14 @@ $breakpoints: (
 );
 
 $bp1919: 1919px;
+
 $bp1500: 1500px;
 $bp1499: 1499px;
+
 $bp1470: 1470px;
+
+$bp1440: 1440px;
+$bp1439: 1439px;
 
 $bp1200: 1200px;
 $bp1199: 1199px;
@@ -52,8 +57,15 @@ $shadow: 0 0 20px 0 rgba($black, .1);
 :root {
   --transition: .3s;
 
+  --font-96: 96px;
+  --font-48: 48px;
   --font-40: 40px;
   --font-36: 36px;
+  --font-32: 32px;
+  --font-24: 24px;
+  --font-16: 16px;
+  --font-14: 14px;
+  --font-11: 11px;
 
   --padding: 30px;
 

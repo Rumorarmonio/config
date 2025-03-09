@@ -16,12 +16,12 @@
     max-width: 400px;
 
     p {
-      font-size: 24px
+      font-size: var(--font-24);
     }
   }
 
   &__right {
-    font-size: 94px;
+    font-size: var(--font-96);
     line-height: 1.2;
   }
 }

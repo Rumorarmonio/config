@@ -39,7 +39,7 @@
     }
 
     &-label {
-      font-size: 14px;
+      font-size: var(--font-14);
     }
 
     &-list {
@@ -73,7 +73,7 @@
     justify-content: flex-end;
     gap: 16px;
     margin-top: 24px;
-    font-size: 14px;
+    font-size: var(--font-14);
 
     .link_icon {
       gap: 8px;
