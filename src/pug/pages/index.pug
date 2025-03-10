@@ -22,10 +22,13 @@ block variables
     ]
 
 block content
-  section.pages
-    .container
-      h1 Pages:
-      ol.pages__list
-        each page in pages
-          li.pages__item
-            a.link(href = `${page.path}.html`)!= page.title
+  include ../blocks/header/header-registration
+
+  main
+    section.pages
+      .container
+        h1 Pages:
+        ol.pages__list
+          each page in pages
+            li.pages__item
+              a.link(href = `${page.path}.html`)!= page.title
