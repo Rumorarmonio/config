@@ -31,6 +31,7 @@ export function init3D(): void {
 
   const renderer = new THREE.WebGLRenderer({
     canvas: canvas,
+    antialias: true,
   })
   renderer.setSize(canvasWidth, canvasHeight)
 
